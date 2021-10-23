@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+<div class="row">
+    <div class="col">
+        <div class="calc">
+            <div class="view">
+                <input type="text" id="result" class="screen" placeholder="0" maxlength="9">
+            </div>
+            <div class="numbers">
+                <button type="button" id="CE" class="operator">CE</button>
+                <button type="button" id="C"  class="operator">C</button>
+                <button type="button" id="%"  class="num operator">%</button>
+                <button type="button" id="/"  class="num operator">/</button>
+                <button type="button" id="7"  class="num nums">7</button>
+                <button type="button" id="8"  class="num nums">8</button>
+                <button type="button" id="9"  class="num nums">9</button>
+                <button type="button" id="*"  class="num operator">X</button>
+                <button type="button" id="4"  class="num nums">4</button>
+                <button type="button" id="5"  class="num nums">5</button>
+                <button type="button" id="6"  class="num nums">6</button>
+                <button type="button" id="+"  class="num operator">+</button>
+                <button type="button" id="1"  class="num nums">1</button>
+                <button type="button" id="2"  class="num nums">2</button>
+                <button type="button" id="3"  class="num nums">3</button>
+                <button type="button" id="-"  class="num operator">-</button>
+                <button type="button" id="."  class="num operator">.</button>
+                <button type="button" id="0"  class="num nums">0</button>
+                <button type="button" id="="  class="num operator" style="flex-grow: 2;">=</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col">
+        <div class="converter">
+            <div class="currency">
+                <div class="from">
+                    <select name="from" id="from">
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                        <option value="jod">JOD</option>
+                        <option value="nis">NIS</option>
+                    </select>
+                </div>
+                <div class="to">
+                    <select name="to" id="to">
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                        <option value="jod">JOD</option>
+                        <option value="nis">ILS</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="screen">
+                    <input type="text" id="toConvert" class="screen" placeholder="0">
+                </div>
+                <div class="screen">
+                    <input type="text" id="convertResult" class="screen" placeholder="0">
+                </div>
+            </div>
+            <button type="button" id="submit" style="min-width: 50%; margin:2%; height: 60px; border-radius: 15px; font-size: 2rem">Convert</button>
+        </div>
+    </div>
+</div>
+<script src="actions.js"></script>
+</body>
+</html>

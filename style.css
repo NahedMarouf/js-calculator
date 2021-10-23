@@ -1,0 +1,92 @@
+html{
+    background-color: rgba(7, 7, 7, 0.9);
+}
+.row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.col{
+    margin : 5% 3%;
+    text-align: center;
+}
+.calc{
+    width: 40%;
+    margin: auto;
+    background-color: #c2c2c2;
+    box-shadow: #060605;
+    border: 5px solid white;
+    border-radius: 10px;
+    padding: 2%;
+}
+.numbers{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.screen{
+    width: 96%;
+    height: 60px;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+.numbers button{
+    width: 25%;
+    height: 60px;
+    font-size: 1.3rem;
+}
+.operator{
+    border-radius: 10px;
+}
+.nums{
+    border-radius: 50%;
+    height: 60px;
+}
+.converter{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #c2c2c2;
+    box-shadow: #060605;
+    border: 5px solid white;
+    border-radius: 5px;
+    padding: 30px;
+    justify-content: center;
+}
+.inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.currency{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 99%;
+}
+.from{
+    width:99%;
+    margin-bottom: 10px;
+}
+.to{
+    width:99%;
+}
+#from {
+    width: 99%;
+    height: 60px;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+#to {
+    width: 99%;
+    height: 60px;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .calc{
+        width: 60%;
+    }
+}
